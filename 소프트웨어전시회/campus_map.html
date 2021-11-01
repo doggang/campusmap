@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한림대학교 캠퍼스맵</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #nav{
+            width: 100%;
+            height: 100px;
+            
+        }
+        #nav_top{
+            display: flex;
+            list-style-type: none;
+            height: 30px;
+            background-color: rgb(22, 55, 99);
+        }
+        #nav_top_first{
+            text-decoration: none;
+            position:absolute;
+            left: 6.3%;
+            line-height: 30px;
+        }
+        #nav_top_first:hover{
+            background: lightblue;
+            border-radius: 3px;
+            transition-duration: 0.2s;
+        }
+        #logo{
+            position: absolute;
+            width: 250px;
+            left: 5%;
+        }
+        #map{
+            position: absolute;
+            margin-top: 10px;
+            left: 50%;
+            margin-left: -475px;
+        }
+        #map_name{
+            position: absolute;
+            width: 970px;
+            top : 99%;
+            margin-top: 70px;
+            left: 50%;
+            margin-left: -475px;
+            padding-bottom: 50px;
+        }
+        #write{
+            width: 200px;
+            height: 150px;
+            position: relative;
+            color: red;
+            border: 2px solid red;
+        }
+        #container{
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+                <ul id="nav_top">
+                    <li id="nav_top_first"><a href="https://www.hallym.ac.kr/">한림대학교</a></li>
+                </ul>
+            <a href="https://www.hallym.ac.kr/"><img id="logo" src="hallym_logo.png" alt=""></a>
+            <a href=""><img src="logo_second.png" alt=""></a>
+        </nav>
+    </header>
+    <section>
+        <div id="container">
+            <img id="map" src="map.jpg" alt="" onclick="action_coords(event)">
+            <img id="map_name" src="map_name.png" alt="">
+            <div id="write"></div>
+        </div>
+    </section>
+    
+    <script>
+        function action_coords(event) {
+            var x = event.offsetX; //offset(X,Y) : 현재 오브젝트 기준 위치
+            var y = event.offsetY; 
+           
+            var coords = "offsetX: " + x + ", offsetY: " + y + "<br/>";
+           document.getElementById("write").innerHTML = coords;
+        }
+        </script>
+</body>
+</html>
