@@ -12,12 +12,13 @@
         }
         a{
             text-decoration: none;
-            color: white;
+            color: lightblue;
         }
         #nav{
             width: 100%;
             height: 100px;
-            
+            padding-bottom: 10px;
+            box-shadow: 0px -2px 10px 0.2px black;
         }
         #nav_top{
             display: flex;
@@ -25,36 +26,39 @@
             height: 30px;
             background-color: rgb(22, 55, 99);
         }
+        #nav_last{
+            display: flex;
+        }
         #nav_top_first{
             text-decoration: none;
             position:absolute;
-            left: 6.3%;
+            left: 7%;
             line-height: 30px;
+            font-size: 13.5px;
+            color: lightblue;
         }
         #nav_top_first:hover{
-            background: lightblue;
+            color: white;
             border-radius: 3px;
             transition-duration: 0.2s;
         }
-        #logo{
+        #logo_first{
             position: absolute;
             width: 250px;
-            left: 5%;
+            top: 6%;
+            left: 7%;
+        }
+        #container{
+            position: relative;
+            height: 700px;
         }
         #map{
             position: absolute;
-            margin-top: 10px;
-            left: 50%;
-            margin-left: -475px;
-        }
-        #map_name{
-            position: absolute;
-            width: 970px;
-            top : 99%;
-            margin-top: 70px;
-            left: 50%;
-            margin-left: -475px;
-            padding-bottom: 50px;
+            top: 5%;
+            left: 5%;
+        }       
+        #map_name_container{
+
         }
         #write{
             width: 200px;
@@ -63,29 +67,53 @@
             color: red;
             border: 2px solid red;
         }
-        #container{
-
+        #footer{
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(48, 48, 48);
+            text-align: center;
+            line-height: 100px;
+            color: rgb(158, 158, 158);
+            font-size: 14px;
+        }
+        }
+        #footer_p{
+            text-align: center;
+            line-height: 100px;
+            color: rgb(158, 158, 158);
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <header>
         <nav id="nav">
-                <ul id="nav_top">
-                    <li id="nav_top_first"><a href="https://www.hallym.ac.kr/">한림대학교</a></li>
-                </ul>
-            <a href="https://www.hallym.ac.kr/"><img id="logo" src="hallym_logo.png" alt=""></a>
-            <a href=""><img src="logo_second.png" alt=""></a>
-        </nav>
+            <ul id="nav_top">
+                <li><a id="nav_top_first" href="https://www.hallym.ac.kr/">한림대학교</a></li>
+            </ul>
+            <div id="nav_last">
+                <a href="#">
+                    <img id="logo_first" src="hallym_logo.png" alt="">
+                </a>
+            </div>
+            </nav>
     </header>
     <section>
         <div id="container">
             <img id="map" src="map.jpg" alt="" onclick="action_coords(event)">
-            <img id="map_name" src="map_name.png" alt="">
-            <div id="write"></div>
+            <div id="map_name_container">
+
+                <img src="/one.png" alt="">
+            </div>
         </div>
+        <div id="write"></div>
     </section>
-    
+    <footer id="footer">
+        <div>
+            (24252)강원도 춘천시 한림대학길 1 대표 033-248-1000 입학안내 033-248-1302~4 팩스 033-248-3333
+        캠퍼스맵 출처 https://www.hallym.ac.kr/hallym_univ/sub04/cP6/sCP1.html</div>
+    </footer>
     <script>
         function action_coords(event) {
             var x = event.offsetX; //offset(X,Y) : 현재 오브젝트 기준 위치
