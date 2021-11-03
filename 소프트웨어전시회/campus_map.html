@@ -72,14 +72,12 @@
             width: 100%;
             height: 100px;
             background-color: rgb(48, 48, 48);
-            text-align: center;
             line-height: 100px;
             color: rgb(158, 158, 158);
             font-size: 14px;
         }
-        }
         #footer_p{
-            text-align: center;
+            padding-left: 30px;
             line-height: 100px;
             color: rgb(158, 158, 158);
             font-size: 14px;
@@ -103,16 +101,15 @@
         <div id="container">
             <img id="map" src="map.jpg" alt="" onclick="action_coords(event)">
             <div id="map_name_container">
-
-                <img src="/one.png" alt="">
+                
             </div>
         </div>
         <div id="write"></div>
     </section>
     <footer id="footer">
-        <div>
-            (24252)강원도 춘천시 한림대학길 1 대표 033-248-1000 입학안내 033-248-1302~4 팩스 033-248-3333
-        캠퍼스맵 출처 https://www.hallym.ac.kr/hallym_univ/sub04/cP6/sCP1.html</div>
+        <div id="footer_p">
+            (24252)강원도 춘천시 한림대학길 1 &nbsp; | &nbsp; 캠퍼스맵 출처 https://www.hallym.ac.kr/hallym_univ/sub04/cP6/sCP1.html</div>
+        </div>
     </footer>
     <script>
         function action_coords(event) {
