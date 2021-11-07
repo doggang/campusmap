@@ -1,0 +1,146 @@
+#map_name_container{
+    width: 430px;
+    height: 689px;
+    position: absolute;
+    background-color: white;
+    top: 5%;
+    right: 1%;
+    overflow-x: hidden;
+}
+.num{
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+.map_name_container_second{
+    display: flex;
+}
+
+#one{
+    width: 100px;
+    left: -2px;
+}
+#two{
+    top: 2px;
+    width: 190px;
+    left: 85px;
+}
+#three{
+    left: 3px;
+}
+#four{
+    width: 110px;
+    left: 85px;
+}
+#five{
+    width: 160px;
+    left: 3px;
+}
+#six{
+    width: 160px;
+    left: 25px;
+}
+#seven{
+    width: 140px;
+    left: 3px;
+}
+#eight{
+    width : 140px;
+    left: 45px;
+}
+#nine{
+    width: 220px;
+    left: 3px;
+}
+#ten{
+    width: 180px;
+}
+#eleven{
+    width: 150px;
+}
+#twelve{
+    width: 160px;
+    left: 30px;
+}
+#thirteen{
+    width: 170px;
+}
+#fourteen{
+    width: 100px;
+    left: 10px;
+}
+#fifteen{
+    width: 140px;
+}
+#sixteen{
+    width: 140px;
+    left: 40px;
+}
+
+#seventeen{
+    width: 180px;
+}
+#eighteen{
+    width: 230px;
+}
+#nineteen{
+    width: 100px;
+}
+#twenty{
+    width: 160px;
+    left: 80px;
+}
+#twenty_one{
+    width: 240px;
+}
+#twenty_two{
+    width: 140px;
+}
+#twenty_three{
+    width: 190px;
+}
+#twenty_four{
+    left: -10px;
+    width: 180px;
+}
+#twenty_five{
+    width: 180px;
+}
+#twenty_six{
+    width: 180px;
+}
+#twenty_seven{
+    width: 180px;
+}
+#twenty_eight{
+    width: 180px;
+}
+#twenty_nine{
+    width: 180px;
+}
+#thirty{
+    width: 180px;
+}
+#thirty_one{
+    width: 180px;
+}
+#thirty_two{
+    width: 180px;
+}
+#thirty_three{
+    width: 140px;
+}
+#thirty_four{
+    width: 190px;
+    left: 40px;
+}
+#thirty_five{
+    width: 110px;
+}
+#thirty_six{
+    width: 90px;
+    left: 70px;
+}
+#thirty_seven{
+    width: 280px;
+}

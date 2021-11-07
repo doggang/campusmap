@@ -24,7 +24,7 @@ a{
 #nav_top_first{
     text-decoration: none;
     position:absolute;
-    left: 7%;
+    left: 110px;
     line-height: 30px;
     font-size: 13.5px;
     color: lightblue;
@@ -37,6 +37,6 @@ a{
 #logo_first{
     position: absolute;
     width: 250px;
-    top: 6%;
+    top: 43.5px;
     left: 100px;
 }
