@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한림대학교 캠퍼스맵</title>
+    <style>
+        
+
+
+
+
+        #container{
+            position: relative;
+            height: 700px;
+        }
+        #map{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }       
+        #map_name_container{
+            width: 430px;
+            height: 689px;
+            position: absolute;
+            top: 5%;
+            right: 1%;
+            overflow-x: hidden;
+        }
+        .num{
+            position: relative;
+            width: 100px;
+            height: 40px;
+        }
+        .map_name_container_second{
+            display: flex;
+        }
+        
+        #one{
+            width: 100px;
+            left: -2px;
+        }
+        #two{
+            top: 2px;
+            width: 190px;
+            left: 85px;
+        }
+        #three{
+            left: 3px;
+        }
+        #four{
+            width: 110px;
+            left: 85px;
+        }
+        #five{
+            width: 160px;
+            left: 3px;
+        }
+        #six{
+            width: 160px;
+            left: 25px;
+        }
+        #seven{
+            width: 140px;
+            left: 3px;
+        }
+        #eight{
+            width : 140px;
+            left: 45px;
+        }
+        #nine{
+            width: 220px;
+            left: 3px;
+        }
+        #ten{
+            width: 180px;
+        }
+        #eleven{
+            width: 150px;
+        }
+        #twelve{
+            width: 160px;
+            left: 30px;
+        }
+        #thirteen{
+            width: 170px;
+        }
+        #fourteen{
+            width: 100px;
+            left: 10px;
+        }
+        #fifteen{
+            width: 140px;
+        }
+        #sixteen{
+            width: 140px;
+            left: 40px;
+        }
+        
+        #seventeen{
+            width: 180px;
+        }
+        #eighteen{
+            width: 230px;
+        }
+        #nineteen{
+            width: 100px;
+        }
+        #twenty{
+            width: 160px;
+            left: 80px;
+        }
+        #twenty_one{
+            width: 240px;
+        }
+        #twenty_two{
+            width: 140px;
+        }
+        #twenty_three{
+            width: 190px;
+        }
+        #twenty_four{
+            left: -10px;
+            width: 180px;
+        }
+        #twenty_five{
+            width: 180px;
+        }
+        #twenty_six{
+            width: 180px;
+        }
+        #twenty_seven{
+            width: 180px;
+        }
+        #twenty_eight{
+            width: 180px;
+        }
+        #twenty_nine{
+            width: 180px;
+        }
+        #thirty{
+            width: 180px;
+        }
+        #thirty_one{
+            width: 180px;
+        }
+        #thirty_two{
+            width: 180px;
+        }
+        #thirty_three{
+            width: 140px;
+        }
+        #thirty_four{
+            width: 190px;
+            left: 40px;
+        }
+        #thirty_five{
+            width: 110px;
+        }
+        #thirty_six{
+            width: 90px;
+            left: 70px;
+        }
+        #thirty_seven{
+            width: 280px;
+        }
+       
+
+
+
+        #write{
+            width: 200px;
+            height: 150px;
+            position: relative;
+            color: red;
+            border: 2px solid red;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <ul id="nav_top">
+                <li><a id="nav_top_first" href="https://www.hallym.ac.kr/">한림대학교</a></li>
+            </ul>
+            <div id="nav_last">
+                <a href="#">
+                    <img id="logo_first" src="hallym_logo.png" alt="">
+                </a>
+            </div>
+            </nav>
+    </header>
+    <section>
+        <div id="container">
+            <img id="map" src="map.jpg" alt="" onclick="action_coords(event)">
+
+            <div id="map_name_container">
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="one" src="/num_img/1.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="two" src="/num_img/2.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="three" src="/num_img/3.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="four" src="/num_img/4.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="five" src="/num_img/5.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="six" src="/num_img/6.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="seven" src="/num_img/7.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="eight" src="/num_img/8.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="nine" src="/num_img/9.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="ten" src="/num_img/10.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="eleven" src="/num_img/11.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="twelve" src="/num_img/12.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="thirteen" src="/num_img/13.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="fourteen" src="/num_img/14.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="fifteen" src="/num_img/15.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="sixteen" src="/num_img/16.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="seventeen" src="/num_img/17.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="eighteen" src="/num_img/18.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="nineteen" src="/num_img/19.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="twenty" src="/num_img/20.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_one" src="/num_img/21.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_two" src="/num_img/22.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_three" src="/num_img/23.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_four" src="/num_img/24.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_five" src="/num_img/25.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_six" src="/num_img/26.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_seven" src="/num_img/27.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_eight" src="/num_img/28.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="twenty_nine" src="/num_img/29.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="thirty" src="/num_img/30.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="thirty_one" src="/num_img/31.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="thirty_two" src="/num_img/32.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="thirty_three" src="/num_img/33.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="thirty_four" src="/num_img/34.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="thirty_five" src="/num_img/35.png" alt=""></a>
+                    <a href="#" onclick="popup()"><img class="num" id="thirty_six" src="/num_img/36.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a href="#" onclick="popup()"><img class="num" id="thirty_seven" src="/num_img/37.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="write"></div>
+    </section>
+    <footer id="footer">
+        <div id="footer_p">
+            (24252)강원도 춘천시 한림대학길 1 &nbsp; | &nbsp; 캠퍼스맵 출처 https://www.hallym.ac.kr/hallym_univ/sub04/cP6/sCP1.html</div>
+        </div>
+    </footer>
+
+
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="x_y.js"></script>
+    <script src="pop_up.js"></script>
+</body>
+</html>
