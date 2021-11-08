@@ -45,12 +45,14 @@
 }
 #nine{
     width: 220px;
+    left: 3px;
 }
 #ten{
     width: 180px;
 }
 #eleven{
     width: 150px;
+    left: -2px;
 }
 #twelve{
     width: 160px;
