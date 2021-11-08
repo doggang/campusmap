@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한림대학교 캠퍼스맵</title>
     <style>
-        
-
-
-
-
+        #section{
+            height: 1000px;
+        }
         #container{
             position: relative;
-            height: 700px;
+            height: 750px;
             width: 100%;
         }
         #map{
@@ -22,8 +20,6 @@
             left: 5%;
             max-width: 1000px;
         }       
-
-
         #write{
             width: 200px;
             height: 150px;
@@ -31,11 +27,9 @@
             color: red;
             border: 2px solid red;
         }
-  
-        
         @media (max-width: 1500px) { /* 1500 이하 화면*/
             #container{
-                height: 1450px; 
+                height: 1100px; 
             }
             #map{
                 left: 50%;
@@ -64,93 +58,93 @@
             </ul>
             <div id="nav_last">
                 <a href="#">
-                    <img id="logo_first" src="hallym_logo.png" alt="">
+                    <img id="logo_first" src="./num_img/hallym_logo.png" alt="">
                 </a>
             </div>
             </nav>
     </header>
     <section>
         <div id="container">
-            <img id="map" src="map.jpg" alt="" onclick="action_coords(event)">
+            <img id="map" src="./num_img/map.jpg" alt="" onclick="action_coords(event)">
 
             <div id="map_name_container">
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="one" src="./num_img/1.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="two" src="./num_img/2.png" alt=""></a>
+                    <a id="one_a" href="#" onclick="popup()"><img class="num" id="one" src="./num_img/1.png" alt=""></a>
+                    <a id="two_a" href="#" onclick="popup()"><img class="num" id="two" src="./num_img/2.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="three" src="./num_img/3.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="four" src="./num_img/4.png" alt=""></a>
+                    <a id="three_a" href="#" onclick="popup()"><img class="num" id="three" src="./num_img/3.png" alt=""></a>
+                    <a id="four_a" href="#" onclick="popup()"><img class="num" id="four" src="./num_img/4.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="five" src="./num_img/5.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="six" src="./num_img/6.png" alt=""></a>
+                    <a id="five_a" href="#" onclick="popup()"><img class="num" id="five" src="./num_img/5.png" alt=""></a>
+                    <a id="six_a" href="#" onclick="popup()"><img class="num" id="six" src="./num_img/6.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="seven" src="./num_img/7.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="eight" src="./num_img/8.png" alt=""></a>
+                    <a id="seven_a" href="#" onclick="popup()"><img class="num" id="seven" src="./num_img/7.png" alt=""></a>
+                    <a id="eight_a" href="#" onclick="popup()"><img class="num" id="eight" src="./num_img/8.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="nine" src="./num_img/9.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="ten" src="./num_img/10.png" alt=""></a>
+                    <a id="nine_a" href="#" onclick="popup()"><img class="num" id="nine" src="./num_img/9.png" alt=""></a>
+                    <a id="ten_a" href="#" onclick="popup()"><img class="num" id="ten" src="./num_img/10.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="eleven" src="./num_img/11.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="twelve" src="./num_img/12.png" alt=""></a>
+                    <a id="eleven_a" href="#" onclick="popup()"><img class="num" id="eleven" src="./num_img/11.png" alt=""></a>
+                    <a id="twelve_a" href="#" onclick="popup()"><img class="num" id="twelve" src="./num_img/12.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="thirteen" src="./num_img/13.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="fourteen" src="./num_img/14.png" alt=""></a>
+                    <a id="thirteen_a" href="#" onclick="popup()"><img class="num" id="thirteen" src="./num_img/13.png" alt=""></a>
+                    <a id="fourteen_a" href="#" onclick="popup()"><img class="num" id="fourteen" src="./num_img/14.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="fifteen" src="./num_img/15.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="sixteen" src="./num_img/16.png" alt=""></a>
+                    <a id="fifteen_a" href="#" onclick="popup()"><img class="num" id="fifteen" src="./num_img/15.png" alt=""></a>
+                    <a id="sixteen_a" href="#" onclick="popup()"><img class="num" id="sixteen" src="./num_img/16.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="seventeen" src="./num_img/17.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="eighteen" src="./num_img/18.png" alt=""></a>
+                    <a id="seventeen_a" href="#" onclick="popup()"><img class="num" id="seventeen" src="./num_img/17.png" alt=""></a>
+                    <a id="eighteen_a" href="#" onclick="popup()"><img class="num" id="eighteen" src="./num_img/18.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="nineteen" src="./num_img/19.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="twenty" src="./num_img/20.png" alt=""></a>
+                    <a id="nineteen_a" href="#" onclick="popup()"><img class="num" id="nineteen" src="./num_img/19.png" alt=""></a>
+                    <a id="twenty_a" href="#" onclick="popup()"><img class="num" id="twenty" src="./num_img/20.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_one" src="./num_img/21.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_two" src="./num_img/22.png" alt=""></a>
+                    <a id="twenty_one_a" href="#" onclick="popup()"><img class="num" id="twenty_one" src="./num_img/21.png" alt=""></a>
+                    <a id="twenty_two_a" href="#" onclick="popup()"><img class="num" id="twenty_two" src="./num_img/22.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_three" src="./num_img/23.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_four" src="./num_img/24.png" alt=""></a>
+                    <a id="twenty_three_a" href="#" onclick="popup()"><img class="num" id="twenty_three" src="./num_img/23.png" alt=""></a>
+                    <a id="twenty_four_a" href="#" onclick="popup()"><img class="num" id="twenty_four" src="./num_img/24.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_five" src="./num_img/25.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_six" src="./num_img/26.png" alt=""></a>
+                    <a id="twenty_five_a" href="#" onclick="popup()"><img class="num" id="twenty_five" src="./num_img/25.png" alt=""></a>
+                    <a id="twenty_six_a" href="#" onclick="popup()"><img class="num" id="twenty_six" src="./num_img/26.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_seven" src="./num_img/27.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_eight" src="./num_img/28.png" alt=""></a>
+                    <a id="twenty_seven_a" href="#" onclick="popup()"><img class="num" id="twenty_seven" src="./num_img/27.png" alt=""></a>
+                    <a id="twenty_eight_a" href="#" onclick="popup()"><img class="num" id="twenty_eight" src="./num_img/28.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="twenty_nine" src="./num_img/29.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="thirty" src="./num_img/30.png" alt=""></a>
+                    <a id="twenty_nine_a" href="#" onclick="popup()"><img class="num" id="twenty_nine" src="./num_img/29.png" alt=""></a>
+                    <a id="thirty_a" href="#" onclick="popup()"><img class="num" id="thirty" src="./num_img/30.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="thirty_one" src="./num_img/31.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="thirty_two" src="./num_img/32.png" alt=""></a>
+                    <a id="thirty_one_a" href="#" onclick="popup()"><img class="num" id="thirty_one" src="./num_img/31.png" alt=""></a>
+                    <a id="thirty_two_a" href="#" onclick="popup()"><img class="num" id="thirty_two" src="./num_img/32.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="thirty_three" src="./num_img/33.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="thirty_four" src="./num_img/34.png" alt=""></a>
+                    <a id="thirty_three_a" href="#" onclick="popup()"><img class="num" id="thirty_three" src="./num_img/33.png" alt=""></a>
+                    <a id="thirty_four_a" href="#" onclick="popup()"><img class="num" id="thirty_four" src="./num_img/34.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="thirty_five" src="./num_img/35.png" alt=""></a>
-                    <a href="#" onclick="popup()"><img class="num" id="thirty_six" src="./num_img/36.png" alt=""></a>
+                    <a id="thirty_five_a" href="#" onclick="popup()"><img class="num" id="thirty_five" src="./num_img/35.png" alt=""></a>
+                    <a id="thirty_six_a" href="#" onclick="popup()"><img class="num" id="thirty_six" src="./num_img/36.png" alt=""></a>
                 </div>
                 <div class="map_name_container_second">
-                    <a href="#" onclick="popup()"><img class="num" id="thirty_seven" src="./num_img/37.png" alt=""></a>
+                    <a id="thirty_seven_a" href="#" onclick="popup()"><img class="num" id="thirty_seven" src="./num_img/37.png" alt=""></a>
                 </div>
             </div>
-
+            
             <div id="map_name_container_reaction"> <!-- 반응형 width < 1500일때 -->
                 <div class="map_name_container_second_reaction">
                     <a href="#" onclick="popup()"><img class="num_reaction" id="one_reaction" src="./num_img/1.png" alt=""></a>
@@ -211,10 +205,9 @@
                 </div>
             </div>
        </div>
-       <div id="write"></div>
     </section>
     <footer id="footer">
-        <div id="footer_p">
+        <div id="footer_in">
             (24252)강원도 춘천시 한림대학길 1 &nbsp; | &nbsp; 캠퍼스맵 출처 https://www.hallym.ac.kr/hallym_univ/sub04/cP6/sCP1.html</div>
         </div>
     </footer>

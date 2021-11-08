@@ -3,5 +3,5 @@ function action_coords(event) {
     var y = event.offsetY; 
    
     var coords = "offsetX: " + x + ", offsetY: " + y + "<br/>";
-   document.getElementById("write").innerHTML = coords;
+   document.getElementById("footer").innerHTML = coords;
 }
