@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한림대학교 캠퍼스맵</title>
+    <link rel="icon" href="title_logo2.png">
+    <style>
+        #body{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            position: relative;
+            height: 800px;
+            width: 100%;
+        }
+        #map{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            max-width: 1000px;
+        }
+        @media all and (max-width: 767px) { /*모바일 ~767 아직 안함*/
+            #container{
+                position: relative;
+                height: 800px;
+                width: 100%;
+                left: 30%;
+            }
+            #map{
+                position: absolute;
+                height: 400px;
+                max-width: 1000px;
+            }
+            #footer{
+                height: 120px;
+            }
+        }
+        
+    </style>
+</head>
+<body onload="notice()">
+    <header>
+        <nav id="nav">
+            <ul id="nav_top">
+                <li><a id="nav_top_first" href="https://www.hallym.ac.kr/">한림대학교</a></li>
+            </ul>
+            <div id="nav_last">
+                <a href="campus_map.html">
+                    <img id="logo_first" src="./num_img/hallym_logo.png" alt="">
+                </a>
+            </div>
+            </nav>
+    </header>
+    <section>
+        <div id="container">
+            <a href="./num_img/map.jpg"><img id="map" src="./num_img/map.jpg" alt=""></a>
+            <div id="map_name_container"> <!-- 1500이상 반응형 container -->
+                <div class="map_name_container_second">
+                    <a id="one_a" href="./building/f_page/b_1.html"><img class="num" id="one" src="./num_img/1.png" alt=""></a>
+                    <a id="two_a" href="./building/f_page/b_2.html"><img class="num" id="two" src="./num_img/2.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="three_a" href="./building/f_page/b_3.html"><img class="num" id="three" src="./num_img/3.png" alt=""></a>
+                    <a id="four_a" href="./building/f_page/b_4.html"><img class="num" id="four" src="./num_img/4.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="five_a" href="./building/f_page/b_5.html"><img class="num" id="five" src="./num_img/5.png" alt=""></a>
+                    <a id="six_a" href="./test.html"><img class="num" id="six" src="./num_img/6.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="seven_a" href="./building/f_page/b_7.html"><img class="num" id="seven" src="./num_img/7.png" alt=""></a>
+                    <a id="eight_a" href="./building/f_page/b_8.html"><img class="num" id="eight" src="./num_img/8.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="nine_a" href="./building/f_page/b_9.html"><img class="num" id="nine" src="./num_img/9.png" alt=""></a>
+                    <a id="ten_a" href="./building/f_page/b_10.html"><img class="num" id="ten" src="./num_img/10.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="eleven_a" href="./test.html"><img class="num" id="eleven" src="./num_img/11.png" alt=""></a>
+                    <a id="twelve_a" href="./test.html"><img class="num" id="twelve" src="./num_img/12.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="thirteen_a" href="./building/f_page/b_13.html"><img class="num" id="thirteen" src="./num_img/13.png" alt=""></a>
+                    <a id="fourteen_a" href="./building/f_page/b_14.html"><img class="num" id="fourteen" src="./num_img/14.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="fifteen_a" href="./test.html"><img class="num" id="fifteen" src="./num_img/15.png" alt=""></a>
+                    <a id="sixteen_a" href="./building/f_page/b_16.html"><img class="num" id="sixteen" src="./num_img/16.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="seventeen_a" href="./test.html"><img class="num" id="seventeen" src="./num_img/17.png" alt=""></a>
+                    <a id="eighteen_a" href="./test.html"><img class="num" id="eighteen" src="./num_img/18.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="nineteen_a" href="./test.html"><img class="num" id="nineteen" src="./num_img/19.png" alt=""></a>
+                    <a id="twenty_a" href="./test.html"><img class="num" id="twenty" src="./num_img/20.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="twenty_one_a" href="./test.html"><img class="num" id="twenty_one" src="./num_img/21.png" alt=""></a>
+                    <a id="twenty_two_a" href="./building/f_page/b_22.html"><img class="num" id="twenty_two" src="./num_img/22.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="twenty_three_a" href="./test.html"><img class="num" id="twenty_three" src="./num_img/23.png" alt=""></a>
+                    <a id="twenty_four_a" href="./test.html"><img class="num" id="twenty_four" src="./num_img/24.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="twenty_five_a" href="./test.html"><img class="num" id="twenty_five" src="./num_img/25.png" alt=""></a>
+                    <a id="twenty_six_a" href="./test.html"><img class="num" id="twenty_six" src="./num_img/26.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="twenty_seven_a" href="./test.html"><img class="num" id="twenty_seven" src="./num_img/27.png" alt=""></a>
+                    <a id="twenty_eight_a" href="./test.html"><img class="num" id="twenty_eight" src="./num_img/28.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="twenty_nine_a" href="./test.html"><img class="num" id="twenty_nine" src="./num_img/29.png" alt=""></a>
+                    <a id="thirty_a" href="./test.html"><img class="num" id="thirty" src="./num_img/30.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="thirty_one_a" href="./test.html"><img class="num" id="thirty_one" src="./num_img/31.png" alt=""></a>
+                    <a id="thirty_two_a" href="./test.html"><img class="num" id="thirty_two" src="./num_img/32.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="thirty_three_a" href="./test.html"><img class="num" id="thirty_three" src="./num_img/33.png" alt=""></a>
+                    <a id="thirty_four_a" href="./test.html"><img class="num" id="thirty_four" src="./num_img/34.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="thirty_five_a" href="./test.html"><img class="num" id="thirty_five" src="./num_img/35.png" alt=""></a>
+                    <a id="thirty_six_a" href="./test.html"><img class="num" id="thirty_six" src="./num_img/36.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second">
+                    <a id="thirty_seven_a" href="./test.html"><img class="num" id="thirty_seven" src="./num_img/37.png" alt=""></a>
+                </div>
+            </div>
+            
+            <div id="map_name_container_reaction"> <!-- 반응형 width 1024~1500 -->
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_1.html"><img class="num_reaction" id="one_reaction" src="./num_img/1.png" alt=""></a>
+                    <a href="./building/f_page/b_2.html"><img class="num_reaction" id="two_reaction" src="./num_img/2.png" alt=""></a>
+                    <a href="./building/f_page/b_3.html"><img class="num_reaction" id="three_reaction" src="./num_img/3.png" alt=""></a>
+                    <a href="./building/f_page/b_4.html"><img class="num_reaction" id="four_reaction" src="./num_img/4.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_5.html"><img class="num_reaction" id="five_reaction" src="./num_img/5.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="six_reaction" src="./num_img/6.png" alt=""></a>
+                    <a href="./building/f_page/b_7.html"><img class="num_reaction" id="seven_reaction" src="./num_img/7.png" alt=""></a>
+                    <a href="./building/f_page/b_8.html"><img class="num_reaction" id="eight_reaction" src="./num_img/8.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_9.html"><img class="num_reaction" id="nine_reaction" src="./num_img/9.png" alt=""></a>
+                    <a href="./building/f_page/b_10.html"><img class="num_reaction" id="ten_reaction" src="./num_img/10.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="eleven_reaction" src="./num_img/11.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twelve_reaction" src="./num_img/12.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_13.html"><img class="num_reaction" id="thirteen_reaction" src="./num_img/13.png" alt=""></a>
+                    <a href="./building/f_page/b_14.html"><img class="num_reaction" id="fourteen_reaction" src="./num_img/14.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="fifteen_reaction" src="./num_img/15.png" alt=""></a>
+                    <a href="./building/f_page/b_16.html"><img class="num_reaction" id="sixteen_reaction" src="./num_img/16.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="seventeen_reaction" src="./num_img/17.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="eighteen_reaction" src="./num_img/18.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="nineteen_reaction" src="./num_img/19.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_reaction" src="./num_img/20.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_one_reaction" src="./num_img/21.png" alt=""></a>
+                    <a href="./building/f_page/b_22.html"><img class="num_reaction" id="twenty_two_reaction" src="./num_img/22.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_three_reaction" src="./num_img/23.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_four_reaction" src="./num_img/24.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_five_reaction" src="./num_img/25.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_six_reaction" src="./num_img/26.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_seven_reaction" src="./num_img/27.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_eight_reaction" src="./num_img/28.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_nine_reaction" src="./num_img/29.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_reaction" src="./num_img/30.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_one_reaction" src="./num_img/31.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_two_reaction" src="./num_img/32.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="thirty_three_reaction" src="./num_img/33.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_four_reaction" src="./num_img/34.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_five_reaction" src="./num_img/35.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_six_reaction" src="./num_img/36.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="thirty_seven_reaction" src="./num_img/37.png" alt=""></a>
+                </div>
+            </div>
+
+            <div id="map_name_container_reaction_2"> <!-- 반응형 width 768~1024 타블렛 -->
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_1.html"><img class="num_reaction" id="one_reaction" src="./num_img/1.png" alt=""></a>
+                    <a href="./building/f_page/b_2.html"><img class="num_reaction" id="two_reaction" src="./num_img/2.png" alt=""></a>
+                    <a href="./building/f_page/b_3.html"><img class="num_reaction" id="three_reaction" src="./num_img/3.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_4.html"><img class="num_reaction" id="four_reaction" src="./num_img/4.png" alt=""></a>
+                    <a href="./building/f_page/b_5.html"><img class="num_reaction" id="five_reaction" src="./num_img/5.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="six_reaction" src="./num_img/6.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    
+                    <a href="./building/f_page/b_7.html"><img class="num_reaction" id="seven_reaction" src="./num_img/7.png" alt=""></a>
+                    <a href="./building/f_page/b_8.html"><img class="num_reaction" id="eight_reaction" src="./num_img/8.png" alt=""></a>
+                    <a href="./building/f_page/b_9.html"><img class="num_reaction" id="nine_reaction" src="./num_img/9.png" alt=""></a>
+                    </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_10.html"><img class="num_reaction" id="ten_reaction" src="./num_img/10.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="eleven_reaction" src="./num_img/11.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twelve_reaction" src="./num_img/12.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_13.html"><img class="num_reaction" id="thirteen_reaction" src="./num_img/13.png" alt=""></a>
+                    <a href="./building/f_page/b_14.html"><img class="num_reaction" id="fourteen_reaction" src="./num_img/14.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="fifteen_reaction" src="./num_img/15.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_16.html"><img class="num_reaction" id="sixteen_reaction" src="./num_img/16.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="seventeen_reaction" src="./num_img/17.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="eighteen_reaction" src="./num_img/18.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="nineteen_reaction" src="./num_img/19.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_reaction" src="./num_img/20.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_one_reaction" src="./num_img/21.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_22.html"><img class="num_reaction" id="twenty_two_reaction" src="./num_img/22.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_three_reaction" src="./num_img/23.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_four_reaction" src="./num_img/24.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_five_reaction" src="./num_img/25.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_six_reaction" src="./num_img/26.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_seven_reaction" src="./num_img/27.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_eight_reaction" src="./num_img/28.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_nine_reaction" src="./num_img/29.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_reaction" src="./num_img/30.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    
+                    <a href="./test.html"><img class="num_reaction" id="thirty_one_reaction" src="./num_img/31.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_two_reaction" src="./num_img/32.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_three_reaction" src="./num_img/33.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction"></div>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_four_reaction" src="./num_img/34.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_five_reaction" src="./num_img/35.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_six_reaction" src="./num_img/36.png" alt=""></a>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="thirty_seven_reaction" src="./num_img/37.png" alt=""></a>
+                </div>
+            </div>
+
+            <div id="map_name_container_reaction_3"> <!-- 반응형 width ~768 모바일 -->
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_1.html"><img class="num_reaction" id="one_reaction" src="./num_img/1.png" alt=""></a>
+                    <a href="./building/f_page/b_2.html"><img class="num_reaction" id="two_reaction" src="./num_img/2.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_3.html"><img class="num_reaction" id="three_reaction" src="./num_img/3.png" alt=""></a>
+                    <a href="./building/f_page/b_4.html"><img class="num_reaction" id="four_reaction" src="./num_img/4.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_5.html"><img class="num_reaction" id="five_reaction" src="./num_img/5.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="six_reaction" src="./num_img/6.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_7.html"><img class="num_reaction" id="seven_reaction" src="./num_img/7.png" alt=""></a>
+                    <a href="./building/f_page/b_8.html"><img class="num_reaction" id="eight_reaction" src="./num_img/8.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_9.html"><img class="num_reaction" id="nine_reaction" src="./num_img/9.png" alt=""></a>
+                    <a href="./building/f_page/b_10.html"><img class="num_reaction" id="ten_reaction" src="./num_img/10.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="eleven_reaction" src="./num_img/11.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twelve_reaction" src="./num_img/12.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./building/f_page/b_13.html"><img class="num_reaction" id="thirteen_reaction" src="./num_img/13.png" alt=""></a>
+                    <a href="./building/f_page/b_14.html"><img class="num_reaction" id="fourteen_reaction" src="./num_img/14.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="fifteen_reaction" src="./num_img/15.png" alt=""></a>
+                    <a href="./building/f_page/b_16.html"><img class="num_reaction" id="sixteen_reaction" src="./num_img/16.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="seventeen_reaction" src="./num_img/17.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="eighteen_reaction" src="./num_img/18.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="nineteen_reaction" src="./num_img/19.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_reaction" src="./num_img/20.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_one_reaction" src="./num_img/21.png" alt=""></a>
+                    <a href="./building/f_page/b_22.html"><img class="num_reaction" id="twenty_two_reaction" src="./num_img/22.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_three_reaction" src="./num_img/23.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_four_reaction" src="./num_img/24.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_five_reaction" src="./num_img/25.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_six_reaction" src="./num_img/26.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_seven_reaction" src="./num_img/27.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="twenty_eight_reaction" src="./num_img/28.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="twenty_nine_reaction" src="./num_img/29.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_reaction" src="./num_img/30.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="thirty_one_reaction" src="./num_img/31.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_two_reaction" src="./num_img/32.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="thirty_three_reaction" src="./num_img/33.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_four_reaction" src="./num_img/34.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="thirty_five_reaction" src="./num_img/35.png" alt=""></a>
+                    <a href="./test.html"><img class="num_reaction" id="thirty_six_reaction" src="./num_img/36.png" alt=""></a>
+                </div>
+                <div class="map_name_container_second_reaction">
+                    <a href="./test.html"><img class="num_reaction" id="thirty_seven_reaction" src="./num_img/37.png" alt=""></a>
+                </div>
+            </div>
+       </div>
+    </section>
+    <footer id="footer">
+        <div id="footer_in">
+            (24252)강원도 춘천시 한림대학길 &nbsp; | &nbsp; 제작자 메일 : rlaehgusqp@naver.com
+        </div>
+        </div>
+    </footer>
+
+
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="map_name_1500up.css">
+    <link rel="stylesheet" href="map_name_1024up.css">
+    <link rel="stylesheet" href="map_name_768up.css">
+    <link rel="stylesheet" href="map_name_768.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="pop_up.js"></script>
+    <script src="notice.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@media all and (min-width:768px) and (max-width: 1023px) { /*타블렛 768 이상 화면 768~1023 아직 안함*/
+    #container{
+        position: relative;
+        height: 1100px;
+        width: 100%;
+    }
+    #map{
+        position: absolute;
+        height: 500px;
+        left: 50%;
+        margin-left: -351.8px;
+    }
+    #map_name_container{
+        display: none;
+    }
+    
+    #map_name_container_reaction{
+        display: none;
+    }
+    #map_name_container_reaction_2{
+        width: 700px;
+        height: 460px;
+        position: absolute;
+        background-color: white;
+        left: 50%;
+        bottom: 3%;
+        margin-left: -350px;
+        overflow-x: hidden;
+    }
+    #map_name_container_reaction_3{
+        display: none;
+    }
+    #footer{
+        height: 120px;
+    }
+    .num_reaction{
+        position: relative;
+        width: 80px;
+        height: 40px;
+    }
+    .map_name_container_second_reaction{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #one_reaction{
+        width: 100px;
+    }
+    #two_reaction{
+        width: 190px;
+        left: -7.5px;
+    }
+    #three_reaction{
+        width: 95px;
+        left: -129px;
+    }
+    #four_reaction{
+        width: 110px;
+        left: 4px;
+    }
+    #five_reaction{
+        width: 150px;
+        left: -4px;
+               }
+    #six_reaction{
+        width: 150px;
+        left: -74px;
+    }
+    #seven_reaction{
+        width: 135px;
+        left: 4px;
+    }
+    #eight_reaction{
+        width : 140px; 
+        left: 8px;
+    }
+    #nine_reaction{
+        width: 210px;
+        left: -14.5px;
+    }
+    #ten_reaction{
+        width: 176px;
+    }
+    #eleven_reaction{
+        width: 140px;
+        left: -47px;
+    }
+    #twelve_reaction{
+        width: 150px;
+        left: -78px;
+    }
+    #thirteen_reaction{
+        width: 170px;
+    }
+    #fourteen_reaction{
+        width: 100px;
+        left: -71px;
+    }
+    #fifteen_reaction{
+        width: 135px;
+        left: -94px;
+    }
+    #sixteen_reaction{
+        width: 140px;
+    }
+    #seventeen_reaction{
+        width: 180px;
+        left: 25px;
+    }
+    #eighteen_reaction{
+        width: 220px;
+        left: -9px;
+    }
+    #nineteen_reaction{
+        width: 105px;
+    }
+    #twenty_reaction{
+        width: 160px;
+        left: 37px;
+    }
+    #twenty_one_reaction{
+        width: 230px;
+    }
+    #twenty_two_reaction{
+        width: 145px;
+    }
+    #twenty_three_reaction{
+        width: 185px;
+        left: 3px;
+    }
+    #twenty_four_reaction{
+        width: 180px;
+        left: -51px;
+    }
+    #twenty_five_reaction{
+        width: 180px;
+    }
+    #twenty_six_reaction{
+        width: 180px;
+        left: -17px;
+    }
+    #twenty_seven_reaction{
+        width: 180px;
+        left: -51.5px;
+    }
+    #twenty_eight_reaction{
+        width: 180px;
+    }
+    #twenty_nine_reaction{
+        width: 180px;
+        left: -17px;
+    }
+    #thirty_reaction{
+        width: 180px;
+        left: -51.5px;
+    }
+    #thirty_one_reaction{
+        width: 180px;
+    }
+    #thirty_two_reaction{
+        width: 170px;
+        left: -45px;
+    }
+    #thirty_three_reaction{
+        width: 135px;
+        left: -96px;
+    }
+    #thirty_four_reaction{
+        width: 195px;
+    }
+    #thirty_five_reaction{
+        width: 105px;
+        left: 32.5px;
+    }
+    #thirty_six_reaction{
+        width: 85px;
+        left: 140px;
+    }
+    #thirty_seven_reaction{
+        width: 270px;
+    }
+}

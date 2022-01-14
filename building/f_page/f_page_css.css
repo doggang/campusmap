@@ -1,0 +1,40 @@
+.btn{
+    background-color: rgb(174, 213, 247);
+    border:white 2px solid;
+    border-radius: 6px;
+    width: 120px;
+    height: 55px;
+    font-size: 25px;
+}
+.btn:hover{
+    background-color: rgb(118, 188, 248);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#btn_ctn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width: 767px){
+    .btn{
+        background-color: rgb(174, 213, 247);
+        border:white 2px solid;
+        border-radius: 6px;
+        width: 50px;
+        height: 35px;
+        font-size: 15px;
+        object-fit: cover;
+        text-align: center;
+    }
+    .btn:hover{
+        background-color: rgb(118, 188, 248);
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    #btn_ctn{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
