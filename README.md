@@ -29,6 +29,7 @@
     
 (9) 배포 과정
     -한림대학교 대학생 익명 커뮤니티 에브리타임에 배포하였음.
+    https://doggang.github.io/campusmap/ever.png
     
 (8) 캠퍼스 맵 웹사이트 들어가기
     url : https://doggang.github.io/campusmap/campus_map
