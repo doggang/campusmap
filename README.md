@@ -1,7 +1,7 @@
 # campusmap
 
 (1) 프로젝트 구성 안내
-    -HTML, CSS, JS 3가지 사용
+    -HTML, CSS, JS 3가지 사용(4가지 width의 반응형 사용)
     -개발 툴 : Visual Studio Code 사용
 
 (2) 프로젝트 설명
@@ -32,3 +32,7 @@
     
 (8) 캠퍼스 맵 웹사이트 들어가기
     url : https://doggang.github.io/campusmap/campus_map
+    ![스크린샷 2024-11-05 205435](https://github.com/user-attachments/assets/fc237eee-9086-4af8-b3ef-ea4795d902fd)
+![스크린샷 2024-11-05 205402](https://github.com/user-attachments/assets/fabb915e-1698-40ef-a7c3-2f7286f8a7ce)
+![스크린샷 2024-11-05 205346](https://github.com/user-attachments/assets/0942abd9-6923-4136-b26f-fba9f983cf30)
+![스크린샷 2024-11-05 205331](https://github.com/user-attachments/assets/56b61b3e-1850-479d-87d8-61aa936f0ee5)
